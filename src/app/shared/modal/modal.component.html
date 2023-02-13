@@ -1,4 +1,6 @@
-<div class="animate modal-content"
+<div [ngClass]="{hideModal : !modal.isVisible}"
+
+class="animate modal-content"
 >
 
   <div class="modal-header">
@@ -12,7 +14,7 @@
     <ng-content select="[title]"></ng-content>
 
     <div class="container" >
-      <button
+      <button (click)="modal.showLoader()"
         type="button"
         
         class="cancelbtn"
