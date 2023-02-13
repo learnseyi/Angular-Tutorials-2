@@ -1,1 +1,25 @@
-<p>modal works!</p>
+<div class="animate modal-content"
+>
+
+  <div class="modal-header">
+    <span class="close" title="Close Modal"
+    >&times;</span
+  >
+    <h1 style="text-align: center; margin-top: 5px">Your Account</h1>
+    
+   
+    <ng-content></ng-content>
+    <ng-content select="[title]"></ng-content>
+
+    <div class="container" >
+      <button
+        type="button"
+        
+        class="cancelbtn"
+      >
+        Cancel
+      </button><br>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+</div>
